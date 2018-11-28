@@ -12,16 +12,32 @@
             </xsl:apply-templates>
         </html>
     </xsl:template>
-
+    <xsl:template name="giveRefTeacher">
+        <xsl:param name="name">unknown</xsl:param>
+        <xsl:for-each select="../lectures/lecture">
+            <xsl:if test="attribute::name=$name">
+                <xsl:value-of select="attribute::ref-teacher"/>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
     <xsl:template match="teachers">
+        <xsl:text>
+
+        </xsl:text>
+        <xsl:variable name="ref">
+            <xsl:call-template name="giveRefTeacher">
+                <xsl:with-param name="name">info</xsl:with-param>
+            </xsl:call-template>
+        </xsl:variable>
         <xsl:for-each select="teacher">
-            <xsl:variable name="length" select="string-length(DoB)"/>
-            <xsl:if test="(2018-number(substring(DoB,($length)-1,$length))-1900)>30">
-                <xsl:value-of select="."/>
+            <xsl:if test="(2018-number(substring(DoB,(string-length(DoB))-1,string-length(DoB)))-1900)>30 and $ref=(attribute::idTeacher)">
+                <xsl:value-of select="email"/>
+                <xsl:text>
+
+                </xsl:text>
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
     <xsl:template match="lectures"/>
     <xsl:template match="department"/>
-
 </xsl:stylesheet>
