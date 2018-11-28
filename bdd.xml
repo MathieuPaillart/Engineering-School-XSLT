@@ -1,9 +1,7 @@
 <?xml version = "1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="index.css" type="text/css"?>
 <!DOCTYPE engineeringSchool>
-<engineeringSchool label="Polytech" city="Nice"
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   xsi:noNamespaceSchemaLocation="bdd_schema.xsd">
+<engineeringSchool label="Polytech" city="Nice">
      Voici l'école d'ingénieur Polytech Nice Sophia, composé de sa magnifique équipe enseignante :
     <teachers>
         <teacher idTeacher="1">
@@ -20,7 +18,7 @@
             <DoB>17/10/86</DoB>
             <phoneNumber>0320320323</phoneNumber>
             <email>Sebastien.Mosser@unice.fr</email>
-            <country>Montreal</country>
+            <country>Canada</country>
         </teacher>
         <teacher idTeacher="3">
             <name>Faron</name>
