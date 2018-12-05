@@ -36,6 +36,7 @@
             <xs:extension base="person">
                 <xs:sequence>
                     <xs:element name="idStudent" type="xs:string"/>
+                    <xs:element name="moyenne" type="xs:string"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -43,6 +44,13 @@
 
     <xs:complexType name="promotionType">
         <xs:sequence>
+            <xs:element name="promotionStudents">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="studentref" type="xs:string" maxOccurs="100"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
             <xs:element name="lectures">
                 <xs:complexType>
                     <xs:sequence>
