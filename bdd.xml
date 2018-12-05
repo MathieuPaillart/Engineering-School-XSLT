@@ -1,9 +1,10 @@
 <?xml version = "1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="index.css" type="text/css"?>
+<?xml-stylesheet type="text/xsl" href="scenar2.xsl" ?>
 <!DOCTYPE engineeringSchool>
 <engineeringSchool label="Polytech" city="Nice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:noNamespaceSchemaLocation="bdd_schema.xsd">
-    Voici l'école d'ingénieur Polytech Nice Sophia, composé de sa magnifique équipe enseignante :
+    Voici l'école d'ingénieur Polytech Nice Sophia et ses merveilleux élèves :
     <students>
         <student>
             <name>Paillart</name>
@@ -13,6 +14,7 @@
             <email>mathieu.paillart@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>11119999</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Paillart</name>
@@ -22,6 +24,7 @@
             <email>mathieu.paillart@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>22222222</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Lopez</name>
@@ -31,6 +34,7 @@
             <email>laura.lopez1@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>33333333</idStudent>
+			<moyenne>18</moyenne>
         </student>
         <student>
             <name>Croene</name>
@@ -40,6 +44,7 @@
             <email>hugo.croene@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>12345678</idStudent>
+			<moyenne>9</moyenne>
         </student>
         <student>
             <name>Humbert</name>
@@ -49,6 +54,7 @@
             <email>alix.humbert@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>55555555</idStudent>
+			<moyenne>10</moyenne>
         </student>
         <student>
             <name>Ferré</name>
@@ -58,6 +64,7 @@
             <email>jeremi.ferre@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>21401234</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Pillone</name>
@@ -67,6 +74,7 @@
             <email>prune.pillone@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>21080812</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Gardin</name>
@@ -76,6 +84,7 @@
             <email>alexis.gardin@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>21078808</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Defranoux</name>
@@ -85,6 +94,7 @@
             <email>alexis.defranoux@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>2108038</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Bouis</name>
@@ -94,6 +104,7 @@
             <email>maxime.bouis@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>21080808</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Durant</name>
@@ -103,6 +114,7 @@
             <email>clement.durant@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>57322222</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Masson</name>
@@ -112,6 +124,7 @@
             <email>alexanne.masson@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>89989999</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Simon</name>
@@ -121,6 +134,7 @@
             <email>simon.serrano@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>11111111</idStudent>
+			<moyenne>8</moyenne>
         </student>
         <student>
             <name>Leroux</name>
@@ -130,6 +144,7 @@
             <email>camille.leroux@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>99999999</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Julien</name>
@@ -139,6 +154,7 @@
             <email>camille.julien@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>88888888</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Ssegura</name>
@@ -148,6 +164,7 @@
             <email>alexis.segura@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>77777777</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Tosello</name>
@@ -157,6 +174,7 @@
             <email>sebastien.tosello@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>66666666</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Dupont</name>
@@ -166,6 +184,7 @@
             <email>paul.dupont@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>98765432</idStudent>
+			<moyenne>14</moyenne>
         </student>
         <student>
             <name>Jurozek</name>
@@ -175,8 +194,10 @@
             <email>florian.jurozek@etu.unice.fr</email>
             <country>FRANCE</country>
             <idStudent>444444444</idStudent>
+			<moyenne>14</moyenne>
         </student>
     </students>
+	Sa magnifique équipe enseignante : 
     <teachers>
         <teacher>
             <name>Papazian</name>
@@ -234,6 +255,11 @@
     </lectures>
     <department label="SI">
         <promotion label="SI3">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="anglais">
                     <studentList>
@@ -264,6 +290,11 @@
             </lectures>
         </promotion>
         <promotion label="SI4">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="anglais">
                     <studentList>
@@ -286,6 +317,11 @@
             </lectures>
         </promotion>
         <promotion label="SI5">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="anglais">
                     <studentList>
@@ -310,6 +346,11 @@
     </department>
     <department label="ELEC">
         <promotion label="ELEC3">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="japonais">
                     <studentList>
@@ -332,6 +373,11 @@
             </lectures>
         </promotion>
         <promotion label="ELEC4">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="anglais">
                     <studentList>
@@ -354,6 +400,11 @@
             </lectures>
         </promotion>
         <promotion label="ELEC5">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="maths">
                     <studentList>
@@ -369,6 +420,11 @@
     </department>
     <department label="BAT">
         <promotion label="BAT3">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="japonais">
                     <studentList>
@@ -391,6 +447,11 @@
             </lectures>
         </promotion>
         <promotion label="BAT4">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="philosophie">
                     <studentList>
@@ -404,6 +465,11 @@
             </lectures>
         </promotion>
         <promotion label="BAT5">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="info">
                     <studentList>
@@ -419,6 +485,11 @@
     </department>
     <department label="MAM">
         <promotion label="MAM3">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="anglais">
                     <studentList>
@@ -432,6 +503,11 @@
             </lectures>
         </promotion>
         <promotion label="MAM4">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="maths">
                     <studentList>
@@ -445,6 +521,11 @@
             </lectures>
         </promotion>
         <promotion label="MAM5">
+			<promotionStudents>
+				<studentref>55555555</studentref>
+				<studentref>99999999</studentref>
+				<studentref>11111111</studentref>
+			</promotionStudents>
             <lectures>
                 <lectureRef ref-lecture="anglais">
                     <studentList>
