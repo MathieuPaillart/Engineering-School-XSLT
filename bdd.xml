@@ -247,10 +247,17 @@
     </teachers>
     Ainsi que des cours géniaux qui sont les suivants :
     <lectures>
-        <lecture name="anglais"/>
-        <lecture name="info"/>
-        <lecture name="maths"/>
-        <lecture name="japonais"/>
+        <lecture name="anglais">
+        </lecture>
+        <lecture name="info">
+            <maintenue>true</maintenue>
+        </lecture>
+        <lecture name="maths">
+            <maintenue>false</maintenue>
+        </lecture>
+        <lecture name="japonais">
+            <maintenue>false</maintenue>
+        </lecture>
         <lecture name="philosophie"/>
     </lectures>
     <department label="SI">
@@ -338,7 +345,7 @@
                         <studentref>99999999</studentref>
                     </studentList>
                     <teacherList>
-                        <teacherref>5</teacherref>
+                        <teacherref>2</teacherref>
                     </teacherList>
                 </lectureRef>
             </lectures>

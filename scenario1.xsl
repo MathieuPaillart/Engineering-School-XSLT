@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:exslt="http://exslt.org/common">
-    <xsl:template match="enginneringSchool">
+    <xsl:template match="engineeringSchool">
         <html>
             <head>
                 <title>Licenciement</title>
