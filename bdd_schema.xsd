@@ -117,6 +117,7 @@
                                         <xs:extension base="person">
                                             <xs:sequence>
                                                 <xs:element name="idTeacher" type="xs:string"/>
+                                                    <xs:element name="returnDate" type="xs:date" minOccurs="0"/>
                                             </xs:sequence>
                                         </xs:extension>
                                     </xs:complexContent>

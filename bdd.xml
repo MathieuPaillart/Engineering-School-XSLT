@@ -216,6 +216,7 @@
             <email>Sebastien.Mosser@unice.fr</email>
             <country>Canada</country>
             <idTeacher>2</idTeacher>
+            <returnDate>2030-09-02</returnDate>
         </teacher>
         <teacher>
             <name>Faron</name>

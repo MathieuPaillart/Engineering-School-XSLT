@@ -7,6 +7,13 @@
             </head>
             <body>
             </body>
+            Date de retour : <xsl:apply-templates select="teachers/teacher[name='Mosser']">
+        </xsl:apply-templates>
+            Email mosser : <xsl:value-of select="teachers/teacher[name='Mosser']/email"/>
+            <xsl:text>
+
+            </xsl:text>
+
             <xsl:variable name="idTeacherMosser">
                 <xsl:apply-templates select="teachers">
                 </xsl:apply-templates>
@@ -16,12 +23,12 @@
                     <xsl:with-param name="idTeacherMosser" select="$idTeacherMosser"/>
                 </xsl:apply-templates>
             </xsl:variable>
-            <xsl:variable name="coursesMosserMaintenue">
+            <xsl:variable name="coursesMosserTotal">
                 <xsl:apply-templates select="lectures">
                     <xsl:with-param name="lecturesMosser" select="$coursesMosser"/>
                 </xsl:apply-templates>
             </xsl:variable>
-            <xsl:value-of select="$coursesMosserMaintenue"/>
+            <xsl:value-of select="$coursesMosserTotal"/>
         </html>
     </xsl:template>
     <xsl:template match="teachers">
@@ -54,5 +61,8 @@
                 </xsl:choose>
             </xsl:if>
         </xsl:for-each>
+    </xsl:template>
+    <xsl:template match="teachers/teacher[name='Mosser']">
+        <xsl:value-of select="returnDate"/>
     </xsl:template>
 </xsl:stylesheet>
