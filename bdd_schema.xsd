@@ -1,0 +1,150 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:attribute name="label" type="xs:string"/>
+    <xs:element name="lecture" type="lectureType"/>
+    <xs:complexType name="lectureType">
+        <xs:attribute name="name" type="xs:string"/>
+    </xs:complexType>
+    <xs:element name="lectures">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="lecture"/>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="lectureKey">
+            <xs:selector xpath="lecture"/>
+            <xs:field xpath="@name"/>
+        </xs:key>
+    </xs:element>
+    <xs:complexType name="person">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="DoB" type="xs:string"/>
+            <xs:element name="phoneNumber" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:choice>
+                <xs:element name="situation" type="xs:string"/>
+                <xs:element name="adress" type="xs:string"/>
+                <xs:element name="zipcode" type="xs:string"/>
+                <xs:element name="city" type="xs:string"/>
+                <xs:element name="country" type="xs:string"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="studentType">
+        <xs:complexContent>
+            <xs:extension base="person">
+                <xs:sequence>
+                    <xs:element name="idStudent" type="xs:string"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="promotionType">
+        <xs:sequence>
+            <xs:element name="lectures">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="lectureRef" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="studentList">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="studentref" type="xs:string" maxOccurs="100"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="teacherList">
+                                        <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="teacherref" type="xs:string" maxOccurs="100"/>
+                                        </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                                <xs:attribute name="ref-lecture" type="xs:string"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute ref="label"/>
+    </xs:complexType>
+
+    <xs:complexType name="departmentType">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="promotion" type="promotionType"/>
+        </xs:sequence>
+        <xs:attribute ref="label"/>
+    </xs:complexType>
+
+    <xs:element name='engineeringSchool'>
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="students">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="student" type="studentType" maxOccurs="unbounded">
+                                <xs:unique name="uniqueStudentNumber">
+                                    <xs:selector xpath="student"/>
+                                    <xs:field xpath="idStudent"/>
+                                </xs:unique>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="unbounded" name="teachers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="teacher" minOccurs="1"
+                                        maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:complexContent>
+                                        <xs:extension base="person">
+                                            <xs:sequence>
+                                                <xs:element name="idTeacher" type="xs:string"/>
+                                            </xs:sequence>
+                                        </xs:extension>
+                                    </xs:complexContent>
+                                </xs:complexType>
+                                <xs:unique name="uniqueTeacherNumber">
+                                    <xs:selector xpath="teacher"/>
+                                    <xs:field xpath="idTeacher"/>
+                                </xs:unique>
+                            </xs:element>
+                        </xs:sequence>
+
+                    </xs:complexType>
+                </xs:element>
+                <xs:element ref="lectures">
+                </xs:element>
+                <xs:element maxOccurs="unbounded" name="department" type="departmentType"/>
+            </xs:sequence>
+            <xs:attribute ref="label"/>
+            <xs:attribute name="city" type="xs:string"/>
+        </xs:complexType>
+        <xs:key name="teacherKey">
+            <xs:selector xpath="./teachers/teacher"/>
+            <xs:field xpath="idTeacher"/>
+        </xs:key>
+        <xs:keyref name="teacherKeyRef" refer="teacherKey">
+            <xs:selector xpath="lectures/lecture/teacherList/teacherRef"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+        <xs:keyref name="lecturesKeyRef" refer="lectureKey">
+            <xs:selector xpath="department/promotion/lectures/lectureRef"/>
+            <xs:field xpath="@ref-lecture"/>
+        </xs:keyref>
+        <xs:key name="StudentKey">
+            <xs:selector xpath="./students/student"/>
+            <xs:field xpath="idStudent"/>
+        </xs:key>
+        <xs:keyref name="CourseStudentRef" refer="StudentKey">
+            <xs:selector xpath="./lectures/lecture/studentList/studentRef"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

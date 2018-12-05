@@ -1,300 +1,460 @@
 <?xml version = "1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="index.css" type="text/css"?>
 <!DOCTYPE engineeringSchool>
-<engineeringSchool label="Polytech" city="Nice">
-     Voici l'école d'ingénieur Polytech Nice Sophia, composé de sa magnifique équipe enseignante :
+<engineeringSchool label="Polytech" city="Nice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation="bdd_schema.xsd">
+    Voici l'école d'ingénieur Polytech Nice Sophia, composé de sa magnifique équipe enseignante :
+    <students>
+        <student>
+            <name>Paillart</name>
+            <firstName>Mathieu</firstName>
+            <DoB>14/07/1997</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>mathieu.paillart@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>11119999</idStudent>
+        </student>
+        <student>
+            <name>Paillart</name>
+            <firstName>Mathieu</firstName>
+            <DoB>14/07/1997</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>mathieu.paillart@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>22222222</idStudent>
+        </student>
+        <student>
+            <name>Lopez</name>
+            <firstName>Laura</firstName>
+            <DoB>07/11/1996</DoB>
+            <phoneNumber>0672520748</phoneNumber>
+            <email>laura.lopez1@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>33333333</idStudent>
+        </student>
+        <student>
+            <name>Croene</name>
+            <firstName>Hugo</firstName>
+            <DoB>07/11/1996</DoB>
+            <phoneNumber>0672520748</phoneNumber>
+            <email>hugo.croene@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>12345678</idStudent>
+        </student>
+        <student>
+            <name>Humbert</name>
+            <firstName>Alix</firstName>
+            <DoB>07/11/1996</DoB>
+            <phoneNumber>0672520748</phoneNumber>
+            <email>alix.humbert@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>55555555</idStudent>
+        </student>
+        <student>
+            <name>Ferré</name>
+            <firstName>Jérémi</firstName>
+            <DoB>07/11/1996</DoB>
+            <phoneNumber>0672520748</phoneNumber>
+            <email>jeremi.ferre@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>21401234</idStudent>
+        </student>
+        <student>
+            <name>Pillone</name>
+            <firstName>Prune</firstName>
+            <DoB>24/07/1997</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>prune.pillone@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>21080812</idStudent>
+        </student>
+        <student>
+            <name>Gardin</name>
+            <firstName>Alexis</firstName>
+            <DoB>14/05/1995</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>alexis.gardin@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>21078808</idStudent>
+        </student>
+        <student>
+            <name>Defranoux</name>
+            <firstName>Alexis</firstName>
+            <DoB>14/07/1997</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>alexis.defranoux@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>2108038</idStudent>
+        </student>
+        <student>
+            <name>Bouis</name>
+            <firstName>Maxime</firstName>
+            <DoB>14/07/1997</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>maxime.bouis@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>21080808</idStudent>
+        </student>
+        <student>
+            <name>Durant</name>
+            <firstName>Clément</firstName>
+            <DoB>14/07/1997</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>clement.durant@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>57322222</idStudent>
+        </student>
+        <student>
+            <name>Masson</name>
+            <firstName>Alexanne</firstName>
+            <DoB>07/11/1996</DoB>
+            <phoneNumber>0672520748</phoneNumber>
+            <email>alexanne.masson@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>89989999</idStudent>
+        </student>
+        <student>
+            <name>Simon</name>
+            <firstName>Serrano</firstName>
+            <DoB>14/07/1997</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>simon.serrano@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>11111111</idStudent>
+        </student>
+        <student>
+            <name>Leroux</name>
+            <firstName>Camille</firstName>
+            <DoB>14/07/1997</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>camille.leroux@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>99999999</idStudent>
+        </student>
+        <student>
+            <name>Julien</name>
+            <firstName>Camille</firstName>
+            <DoB>07/11/1996</DoB>
+            <phoneNumber>0672520748</phoneNumber>
+            <email>camille.julien@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>88888888</idStudent>
+        </student>
+        <student>
+            <name>Ssegura</name>
+            <firstName>Alexis</firstName>
+            <DoB>14/07/1997</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>alexis.segura@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>77777777</idStudent>
+        </student>
+        <student>
+            <name>Tosello</name>
+            <firstName>Sebastien</firstName>
+            <DoB>07/11/1996</DoB>
+            <phoneNumber>0672520748</phoneNumber>
+            <email>sebastien.tosello@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>66666666</idStudent>
+        </student>
+        <student>
+            <name>Dupont</name>
+            <firstName>Paul</firstName>
+            <DoB>14/07/1997</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>paul.dupont@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>98765432</idStudent>
+        </student>
+        <student>
+            <name>Jurozek</name>
+            <firstName>Florian</firstName>
+            <DoB>14/07/1997</DoB>
+            <phoneNumber>0608080808</phoneNumber>
+            <email>florian.jurozek@etu.unice.fr</email>
+            <country>FRANCE</country>
+            <idStudent>444444444</idStudent>
+        </student>
+    </students>
     <teachers>
-        <teacher idTeacher="1">
+        <teacher>
             <name>Papazian</name>
             <firstName>Christophe</firstName>
             <DoB>14/08/75</DoB>
             <phoneNumber>0320320323</phoneNumber>
             <email>Chistophe.Papazian@unice.fr</email>
             <country>France</country>
+            <idTeacher>1</idTeacher>
         </teacher>
-        <teacher idTeacher="2">
+        <teacher>
             <name>Mosser</name>
             <firstName>Sebastien</firstName>
             <DoB>17/10/86</DoB>
             <phoneNumber>0320320323</phoneNumber>
             <email>Sebastien.Mosser@unice.fr</email>
             <country>Canada</country>
+            <idTeacher>2</idTeacher>
         </teacher>
-        <teacher idTeacher="3">
+        <teacher>
             <name>Faron</name>
             <firstName>Catherine</firstName>
             <DoB>17/10/70</DoB>
             <phoneNumber>0320320323</phoneNumber>
             <email>Catherine.Faron@unice.fr</email>
             <country>France</country>
+            <idTeacher>3</idTeacher>
         </teacher>
-        <teacher idTeacher="4">
+        <teacher>
             <name>Deantoni</name>
             <firstName>Julien</firstName>
             <DoB>09/10/87</DoB>
             <phoneNumber>0320320323</phoneNumber>
             <email>Julien.Deantoni@etu.unice.fr</email>
             <country>France</country>
+            <idTeacher>4</idTeacher>
         </teacher>
-        <teacher idTeacher="5">
+        <teacher>
             <name>Collet</name>
             <firstName>Philippe</firstName>
             <DoB>17/10/95</DoB>
             <phoneNumber>0320320323</phoneNumber>
             <email>Philippe.Collet@unice.fr</email>
             <country>France</country>
+            <idTeacher>5</idTeacher>
         </teacher>
     </teachers>
     Ainsi que des cours géniaux qui sont les suivants :
     <lectures>
-        <lecture name="anglais" ref-teacher="1"/>
-        <lecture name="info" ref-teacher="2"/>
-        <lecture name="maths" ref-teacher="3"/>
-        <lecture name="japonais" ref-teacher="4"/>
-        <lecture name="philosophie" ref-teacher="5"/>
+        <lecture name="anglais"/>
+        <lecture name="info"/>
+        <lecture name="maths"/>
+        <lecture name="japonais"/>
+        <lecture name="philosophie"/>
     </lectures>
     <department label="SI">
         <promotion label="SI3">
-            <student>
-                <name>Paillart</name>
-                <firstName>Mathieu</firstName>
-                <DoB>14/07/1997</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>mathieu.paillart@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21080808</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="anglais"/>
-                <lectureRef ref-lecture="japonais"/>
-                <lectureRef ref-lecture="info"/>
+                <lectureRef ref-lecture="anglais">
+                    <studentList>
+                        <studentref>55555555</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>1</teacherref>
+                    </teacherList>
+                </lectureRef>
+                <lectureRef ref-lecture="japonais">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>2</teacherref>
+                    </teacherList>
+                </lectureRef>
+                <lectureRef ref-lecture="info">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>2</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
         <promotion label="SI4">
-            <student>
-                <name>Paillart</name>
-                <firstName>Mathieu</firstName>
-                <DoB>14/07/1997</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>mathieu.paillart@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21080808</idStudent>
-            </student>
-            <student>
-                <name>Lopez</name>
-                <firstName>Laura</firstName>
-                <DoB>07/11/1996</DoB>
-                <phoneNumber>0672520748</phoneNumber>
-                <email>laura.lopez1@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21401952</idStudent>
-            </student>
-            <student>
-                <name>Croene</name>
-                <firstName>Hugo</firstName>
-                <DoB>07/11/1996</DoB>
-                <phoneNumber>0672520748</phoneNumber>
-                <email>hugo.croene@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21401952</idStudent>
-            </student>
-            <student>
-                <name>Humbert</name>
-                <firstName>Alix</firstName>
-                <DoB>07/11/1996</DoB>
-                <phoneNumber>0672520748</phoneNumber>
-                <email>alix.humbert@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21401952</idStudent>
-            </student>
-            <student>
-                <name>Ferré</name>
-                <firstName>Jérémi</firstName>
-                <DoB>07/11/1996</DoB>
-                <phoneNumber>0672520748</phoneNumber>
-                <email>jeremi.ferre@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21401952</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="anglais"/>
-                <lectureRef ref-lecture="info"/>
+                <lectureRef ref-lecture="anglais">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>3</teacherref>
+                    </teacherList>
+                </lectureRef>
+                <lectureRef ref-lecture="info">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>4</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
         <promotion label="SI5">
-            <student>
-                <name>Gardin</name>
-                <firstName>Alexis</firstName>
-                <DoB>14/05/1995</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>alexis.gardin@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21078808</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="anglais"/>
-                <lectureRef ref-lecture="maths"/>
+                <lectureRef ref-lecture="anglais">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>5</teacherref>
+                    </teacherList>
+                </lectureRef>
+                <lectureRef ref-lecture="maths">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>5</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
     </department>
     <department label="ELEC">
         <promotion label="ELEC3">
-            <student>
-                <name>Pillone</name>
-                <firstName>Prune</firstName>
-                <DoB>24/07/1997</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>prune.pillone@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21080812</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="japonais"/>
-                <lectureRef ref-lecture="anglais"/>
+                <lectureRef ref-lecture="japonais">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>1</teacherref>
+                    </teacherList>
+                </lectureRef>
+                <lectureRef ref-lecture="anglais">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>2</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
         <promotion label="ELEC4">
-            <student>
-                <name>Defranoux</name>
-                <firstName>Alexis</firstName>
-                <DoB>14/07/1997</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>alexis.defranoux@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21080808</idStudent>
-            </student>
-            <student>
-                <name>Tosello</name>
-                <firstName>Sebastien</firstName>
-                <DoB>07/11/1996</DoB>
-                <phoneNumber>0672520748</phoneNumber>
-                <email>sebastien.tosello@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21401952</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="anglais"/>
-                <lectureRef ref-lecture="philosophie"/>
+                <lectureRef ref-lecture="anglais">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>2</teacherref>
+                    </teacherList>
+                </lectureRef>
+                <lectureRef ref-lecture="philosophie">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>3</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
         <promotion label="ELEC5">
-            <student>
-                <name>Bouis</name>
-                <firstName>Maxime</firstName>
-                <DoB>14/07/1997</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>maxime.bouis@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21080808</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="maths"/>
+                <lectureRef ref-lecture="maths">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>4</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
     </department>
     <department label="BAT">
         <promotion label="BAT3">
-            <student>
-                <name>Dupont</name>
-                <firstName>Paul</firstName>
-                <DoB>14/07/1997</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>paul.dupont@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21080808</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="japonais"/>
+                <lectureRef ref-lecture="japonais">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>2</teacherref>
+                    </teacherList>
+                </lectureRef>
+                <lectureRef ref-lecture="maths">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>4</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
         <promotion label="BAT4">
-            <student>
-                <name>Durant</name>
-                <firstName>Clément</firstName>
-                <DoB>14/07/1997</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>clement.durant@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21080808</idStudent>
-            </student>
-            <student>
-                <name>Masson</name>
-                <firstName>Alexanne</firstName>
-                <DoB>07/11/1996</DoB>
-                <phoneNumber>0672520748</phoneNumber>
-                <email>alexanne.masson@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21401952</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="philosophie"/>
+                <lectureRef ref-lecture="philosophie">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>1</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
         <promotion label="BAT5">
-            <student>
-                <name>Jurozek</name>
-                <firstName>Florian</firstName>
-                <DoB>14/07/1997</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>florian.jurozek@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21080808</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="info"/>
+                <lectureRef ref-lecture="info">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>4</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
     </department>
     <department label="MAM">
         <promotion label="MAM3">
-            <student>
-                <name>Simon</name>
-                <firstName>Serrano</firstName>
-                <DoB>14/07/1997</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>simon.serrano@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21080808</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="anglais"/>
+                <lectureRef ref-lecture="anglais">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>5</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
         <promotion label="MAM4">
-            <student>
-                <name>Leroux</name>
-                <firstName>Camille</firstName>
-                <DoB>14/07/1997</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>camille.leroux@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21080808</idStudent>
-            </student>
-            <student>
-                <name>Julien</name>
-                <firstName>Camille</firstName>
-                <DoB>07/11/1996</DoB>
-                <phoneNumber>0672520748</phoneNumber>
-                <email>camille.julien@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21401952</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="maths"/>
+                <lectureRef ref-lecture="maths">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>3</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
         <promotion label="MAM5">
-            <student>
-                <name>Ssegura</name>
-                <firstName>Alexis</firstName>
-                <DoB>14/07/1997</DoB>
-                <phoneNumber>0608080808</phoneNumber>
-                <email>alexis.segura@etu.unice.fr</email>
-                <country>FRANCE</country>
-                <idStudent>21080808</idStudent>
-            </student>
             <lectures>
-                <lectureRef ref-lecture="anglais"/>
+                <lectureRef ref-lecture="anglais">
+                    <studentList>
+                        <studentref>11111111</studentref>
+                        <studentref>99999999</studentref>
+                    </studentList>
+                    <teacherList>
+                        <teacherref>4</teacherref>
+                    </teacherList>
+                </lectureRef>
             </lectures>
         </promotion>
     </department>
