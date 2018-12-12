@@ -2,6 +2,9 @@
     <xs:attribute name="label" type="xs:string"/>
     <xs:element name="lecture" type="lectureType"/>
     <xs:complexType name="lectureType">
+        <xs:sequence>
+            <xs:element name="maintenue" type="xs:boolean" minOccurs="0"/>
+        </xs:sequence>
         <xs:attribute name="name" type="xs:string"/>
     </xs:complexType>
     <xs:element name="lectures">
@@ -36,6 +39,7 @@
             <xs:extension base="person">
                 <xs:sequence>
                     <xs:element name="idStudent" type="xs:string"/>
+                    <xs:element name="moyenne" type="xs:string"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -43,6 +47,13 @@
 
     <xs:complexType name="promotionType">
         <xs:sequence>
+            <xs:element name="promotionStudents">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="studentref" type="xs:string" maxOccurs="100"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
             <xs:element name="lectures">
                 <xs:complexType>
                     <xs:sequence>
@@ -58,9 +69,9 @@
                                     </xs:element>
                                     <xs:element name="teacherList">
                                         <xs:complexType>
-                                        <xs:sequence>
-                                            <xs:element name="teacherref" type="xs:string" maxOccurs="100"/>
-                                        </xs:sequence>
+                                            <xs:sequence>
+                                                <xs:element name="teacherref" type="xs:string" maxOccurs="100"/>
+                                            </xs:sequence>
                                         </xs:complexType>
                                     </xs:element>
                                 </xs:sequence>
@@ -106,6 +117,7 @@
                                         <xs:extension base="person">
                                             <xs:sequence>
                                                 <xs:element name="idTeacher" type="xs:string"/>
+                                                    <xs:element name="returnDate" type="xs:date" minOccurs="0"/>
                                             </xs:sequence>
                                         </xs:extension>
                                     </xs:complexContent>
