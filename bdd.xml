@@ -281,7 +281,7 @@
         <lecture name="philosophie"/>
     </lectures>
     <department label="SI">
-        <promotion label="SI3">
+        <promotion annee="3">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
@@ -316,7 +316,7 @@
                 </lectureRef>
             </lectures>
         </promotion>
-        <promotion label="SI4">
+        <promotion annee="4">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
@@ -343,7 +343,7 @@
                 </lectureRef>
             </lectures>
         </promotion>
-        <promotion label="SI5">
+        <promotion annee="5">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
@@ -372,7 +372,7 @@
         </promotion>
     </department>
     <department label="ELEC">
-        <promotion label="ELEC3">
+        <promotion annee="3">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
@@ -399,7 +399,7 @@
                 </lectureRef>
             </lectures>
         </promotion>
-        <promotion label="ELEC4">
+        <promotion annee="4">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
@@ -426,7 +426,7 @@
                 </lectureRef>
             </lectures>
         </promotion>
-        <promotion label="ELEC5">
+        <promotion annee="5">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
@@ -446,7 +446,7 @@
         </promotion>
     </department>
     <department label="BAT">
-        <promotion label="BAT3">
+        <promotion annee="3">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
@@ -473,7 +473,7 @@
                 </lectureRef>
             </lectures>
         </promotion>
-        <promotion label="BAT4">
+        <promotion annee="4">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
@@ -491,7 +491,7 @@
                 </lectureRef>
             </lectures>
         </promotion>
-        <promotion label="BAT5">
+        <promotion annee="5">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
@@ -511,7 +511,7 @@
         </promotion>
     </department>
     <department label="MAM">
-        <promotion label="MAM3">
+        <promotion annee="3">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
@@ -529,7 +529,7 @@
                 </lectureRef>
             </lectures>
         </promotion>
-        <promotion label="MAM4">
+        <promotion annee="4">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
@@ -547,7 +547,7 @@
                 </lectureRef>
             </lectures>
         </promotion>
-        <promotion label="MAM5">
+        <promotion annee="5">
 			<promotionStudents>
 				<studentref>55555555</studentref>
 				<studentref>99999999</studentref>
