@@ -38,3 +38,11 @@
     <xsl:template match="lectures"/>
     <xsl:template match="department"/>
 </xsl:stylesheet>
+<!-- <xsl:variable name="$refs" select="studentref" /> -->
+			<!-- <xsl:variable name="$stud" select="//students/student[idStudent=$refs]" /> -->
+			<!-- <xsl:for-each select="$stud"> -->
+				<!-- <xsl:sort data-type="number" select="moyenne" order="ascending"/> -->
+				<!-- <xsl:if test="position() = last()">     -->
+					<!-- Meilleur élève : <xsl:value-of select="name" /> <xsl:value-of select="firstname" /> avec une moyenne de : <xsl:value-of select="moyenne" /><br /> -->
+				<!-- </xsl:if> -->
+			<!-- </xsl:for-each> -->

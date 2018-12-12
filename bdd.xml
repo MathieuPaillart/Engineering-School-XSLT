@@ -15,6 +15,7 @@
             <country>FRANCE</country>
             <idStudent>11119999</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>5</habsences>
         </student>
         <student>
             <name>Paillart</name>
@@ -25,6 +26,7 @@
             <country>FRANCE</country>
             <idStudent>22222222</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>10</habsences>
         </student>
         <student>
             <name>Lopez</name>
@@ -35,6 +37,7 @@
             <country>FRANCE</country>
             <idStudent>33333333</idStudent>
 			<moyenne>18</moyenne>
+			<habsences>8</habsences>
         </student>
         <student>
             <name>Croene</name>
@@ -45,6 +48,7 @@
             <country>FRANCE</country>
             <idStudent>12345678</idStudent>
 			<moyenne>9</moyenne>
+			<habsences>18</habsences>
         </student>
         <student>
             <name>Humbert</name>
@@ -55,6 +59,7 @@
             <country>FRANCE</country>
             <idStudent>55555555</idStudent>
 			<moyenne>10</moyenne>
+			<habsences>2</habsences>
         </student>
         <student>
             <name>Ferré</name>
@@ -65,6 +70,7 @@
             <country>FRANCE</country>
             <idStudent>21401234</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>20</habsences>
         </student>
         <student>
             <name>Pillone</name>
@@ -75,6 +81,7 @@
             <country>FRANCE</country>
             <idStudent>21080812</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>7</habsences>
         </student>
         <student>
             <name>Gardin</name>
@@ -85,6 +92,7 @@
             <country>FRANCE</country>
             <idStudent>21078808</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>4</habsences>
         </student>
         <student>
             <name>Defranoux</name>
@@ -95,6 +103,7 @@
             <country>FRANCE</country>
             <idStudent>2108038</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>4</habsences>
         </student>
         <student>
             <name>Bouis</name>
@@ -105,6 +114,7 @@
             <country>FRANCE</country>
             <idStudent>21080808</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>11</habsences>
         </student>
         <student>
             <name>Durant</name>
@@ -115,6 +125,7 @@
             <country>FRANCE</country>
             <idStudent>57322222</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>22</habsences>
         </student>
         <student>
             <name>Masson</name>
@@ -125,6 +136,7 @@
             <country>FRANCE</country>
             <idStudent>89989999</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>2</habsences>
         </student>
         <student>
             <name>Simon</name>
@@ -135,6 +147,7 @@
             <country>FRANCE</country>
             <idStudent>11111111</idStudent>
 			<moyenne>8</moyenne>
+			<habsences>35</habsences>
         </student>
         <student>
             <name>Leroux</name>
@@ -145,6 +158,7 @@
             <country>FRANCE</country>
             <idStudent>99999999</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>0</habsences>
         </student>
         <student>
             <name>Julien</name>
@@ -155,6 +169,7 @@
             <country>FRANCE</country>
             <idStudent>88888888</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>7</habsences>
         </student>
         <student>
             <name>Ssegura</name>
@@ -165,6 +180,7 @@
             <country>FRANCE</country>
             <idStudent>77777777</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>1</habsences>
         </student>
         <student>
             <name>Tosello</name>
@@ -175,6 +191,7 @@
             <country>FRANCE</country>
             <idStudent>66666666</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>34</habsences>
         </student>
         <student>
             <name>Dupont</name>
@@ -185,6 +202,7 @@
             <country>FRANCE</country>
             <idStudent>98765432</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>6</habsences>
         </student>
         <student>
             <name>Jurozek</name>
@@ -195,6 +213,7 @@
             <country>FRANCE</country>
             <idStudent>444444444</idStudent>
 			<moyenne>14</moyenne>
+			<habsences>2</habsences>
         </student>
     </students>
 	Sa magnifique équipe enseignante : 
