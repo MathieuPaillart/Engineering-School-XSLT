@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="index.css" type="text/css"?>
-<?xml-stylesheet type="text/xsl" href="scenar2.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="scenario4.xsl" ?>
 <!DOCTYPE engineeringSchool>
 <engineeringSchool label="Polytech" city="Nice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:noNamespaceSchemaLocation="bdd_schema.xsd">

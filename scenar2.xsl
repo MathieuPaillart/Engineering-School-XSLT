@@ -60,9 +60,9 @@
 		</xsl:for-each>
 	</xsl:variable>
 	<xsl:apply-templates select="//engineeringSchool/students">
-				<xsl:with-param name="studRefs" select="$students"/>
-				<xsl:with-param name="type" select="$type"/>
-			</xsl:apply-templates>
+		<xsl:with-param name="studRefs" select="$students"/>
+		<xsl:with-param name="type" select="$type"/>
+	</xsl:apply-templates>
   </xsl:template>
   
   <xsl:template name="promoMoyenne">
