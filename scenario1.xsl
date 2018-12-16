@@ -18,6 +18,7 @@
 
         </xsl:text>
         <xsl:variable name="ref">
+            <!-- On récupère tous les professeurs d'infos -->
             <xsl:for-each select="../department/promotion/lectures/lectureRef">
                 <xsl:if test="attribute::ref-lecture='info'">
                     <xsl:value-of select="teacherList/teacherref"/>
@@ -27,6 +28,7 @@
         </xsl:variable>
 
             <xsl:for-each select="teacher">
+                <!--On regarde juste tous les professeurs qui ont plus de 30 ans et qui sont professeurs d'infos -->
                 <xsl:if test="(2018-number(substring(DoB,(string-length(DoB))-1,string-length(DoB)))-1900)>30 and contains($ref,idTeacher)">
                    <xsl:value-of select="name"/>
                 <xsl:text> </xsl:text>
@@ -41,13 +43,5 @@
     <xsl:template match="lectures"/>
     <xsl:template match="students"/>
     <xsl:template match="department"/>
-
+    <!-- On ne veut pas afficher cela donc on enlève le template par défaut -->
 </xsl:stylesheet>
-<!-- <xsl:variable name="$refs" select="studentref" /> -->
-			<!-- <xsl:variable name="$stud" select="//students/student[idStudent=$refs]" /> -->
-			<!-- <xsl:for-each select="$stud"> -->
-				<!-- <xsl:sort data-type="number" select="moyenne" order="ascending"/> -->
-				<!-- <xsl:if test="position() = last()">     -->
-					<!-- Meilleur élève : <xsl:value-of select="name" /> <xsl:value-of select="firstname" /> avec une moyenne de : <xsl:value-of select="moyenne" /><br /> -->
-				<!-- </xsl:if> -->
-			<!-- </xsl:for-each> -->
