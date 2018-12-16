@@ -1,4 +1,4 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/2001/XMLSchema">
     <xs:attribute name="label" type="xs:string"/>
     <xs:element name="lecture" type="lectureType"/>
     <xs:complexType name="lectureType">
@@ -40,6 +40,7 @@
                 <xs:sequence>
                     <xs:element name="idStudent" type="xs:string"/>
                     <xs:element name="moyenne" type="xs:string"/>
+                    <xs:element name="habsences" type="xs:string"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
@@ -82,12 +83,13 @@
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
-        <xs:attribute ref="label"/>
+        <xs:attribute name="annee"/>
     </xs:complexType>
 
     <xs:complexType name="departmentType">
         <xs:sequence>
-            <xs:element maxOccurs="unbounded" name="promotion" type="promotionType"/>
+            <xs:element maxOccurs="unbounded" name="promotion" type="promotionType">
+            </xs:element>
         </xs:sequence>
         <xs:attribute ref="label"/>
     </xs:complexType>
