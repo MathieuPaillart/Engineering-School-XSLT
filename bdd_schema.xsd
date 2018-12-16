@@ -83,15 +83,12 @@
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
-        <xs:attribute ref="label"/>
+        <xs:attribute name="annee"/>
     </xs:complexType>
 
     <xs:complexType name="departmentType">
         <xs:sequence>
             <xs:element maxOccurs="unbounded" name="promotion" type="promotionType">
-                <xs:complexType>
-                    <xs:attribute name="annee" type="xs:string"/>
-                </xs:complexType>
             </xs:element>
         </xs:sequence>
         <xs:attribute ref="label"/>
