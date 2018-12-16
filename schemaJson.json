@@ -1,0 +1,481 @@
+{
+  "definitions": {
+    "studentType": {
+      "allOf": [
+	{
+	  "$ref":"#/definitions/person"
+	},
+	{
+	}
+      ]
+    },
+    "person": {
+      "required": [
+	"name",
+	"firstName",
+	"DoB",
+	"phoneNumber",
+	"email"
+      ],
+      "type":"object",
+      "properties": {
+	"name": {
+	  "type":"string"
+	},
+	"firstName": {
+	  "type":"string"
+	},
+	"DoB": {
+	  "type":"string"
+	},
+	"phoneNumber": {
+	  "type":"string"
+	},
+	"email": {
+	  "type":"string"
+	}
+      }
+    },
+    "promotionType": {
+      "required": [
+	"lectures",
+	"promotionStudents"
+      ],
+      "type":"object",
+      "properties": {
+	"lectures": {
+	  "required": [
+	    "lectureRef"
+	  ],
+	  "type":"object",
+	  "properties": {
+	    "lectureRef": {
+	      "type":"array",
+	      "items": {
+		"properties": {
+		  "ref-lecture": {
+		    "type":"string"
+		  },
+		  "teacherList": {
+		    "required": [
+		      "teacherref"
+		    ],
+		    "type":"object",
+		    "properties": {
+		      "teacherref": {
+			"maxItems":100,
+			"type":"array",
+			"items": {
+			  "type":"string"
+			},
+			"minItems":1
+		      }
+		    }
+		  },
+		  "studentList": {
+		    "required": [
+		      "studentref"
+		    ],
+		    "type":"object",
+		    "properties": {
+		      "studentref": {
+			"maxItems":100,
+			"type":"array",
+			"items": {
+			  "type":"string"
+			},
+			"minItems":1
+		      }
+		    }
+		  }
+		},
+		"type":"object",
+		"required": [
+		  "teacherList",
+		  "studentList"
+		]
+	      },
+	      "minItems":1
+	    }
+	  }
+	},
+	"promotionStudents": {
+	  "required": [
+	    "studentref"
+	  ],
+	  "type":"object",
+	  "properties": {
+	    "studentref": {
+	      "maxItems":100,
+	      "type":"array",
+	      "items": {
+		"type":"string"
+	      },
+	      "minItems":1
+	    }
+	  }
+	}
+      }
+    },
+    "lectureType": {
+      "properties": {
+	"name": {
+	  "type":"string"
+	},
+	"maintenue": {
+	  "type":"boolean"
+	}
+      },
+      "type":"object"
+    },
+    "departmentType": {
+      "type":"object",
+      "properties": {
+	"label": {
+	  "$ref":"#/definitions/@label"
+	},
+	"promotion": {
+	  "type":"array",
+	  "items": {
+	    "$ref":"#/definitions/promotionType"
+	  },
+	  "minItems":1
+	}
+      },
+      "required": [
+	"promotion"
+      ]
+    },
+    "@label": {
+      "type":"string"
+    }
+  },
+  "oneOf": [
+    {
+      "type":"object",
+      "properties": {
+	"engineeringSchool": {
+	  "type":"object",
+	  "properties": {
+	    "label": {
+	      "$ref":"#/definitions/@label"
+	    },
+	    "@city": {
+	      "type":"string"
+	    },
+	    "department": {
+	      "type":"array",
+	      "items": {
+		"$ref":"#/definitions/departmentType"
+	      },
+	      "minItems":1
+	    },
+	    "students": {
+	      "type":"array",
+	      "items": {
+		"required": [
+		  "student"
+		],
+		"type":"object",
+		"properties": {
+		  "student": {
+		    "type":"array",
+		    "items": {
+		      "$ref":"#/definitions/studentType"
+		    },
+		    "minItems":1
+		  }
+		}
+	      },
+	      "minItems":1
+	    },
+	    "teachers": {
+	      "type":"array",
+	      "items": {
+		"required": [
+		  "teacher"
+		],
+		"type":"object",
+		"properties": {
+		  "teacher": {
+		    "type":"array",
+		    "items": {
+		      "facets": {
+		      },
+		      "base": {
+			"$ref":"#/definitions/person"
+		      }
+		    },
+		    "minItems":1
+		  }
+		}
+	      },
+	      "minItems":1
+	    }
+	  },
+	  "required": [
+	    "department",
+	    "students",
+	    "teachers"
+	  ]
+	}
+      },
+      "additionalProperties":false,
+      "required": [
+	"engineeringSchool"
+      ]
+    },
+    {
+      "type":"object",
+      "properties": {
+	"engineeringSchool": {
+	  "type":"object",
+	  "properties": {
+	    "@city": {
+	      "type":"string"
+	    },
+	    "department": {
+	      "type":"array",
+	      "items": {
+		"$ref":"#/definitions/departmentType"
+	      },
+	      "minItems":1
+	    },
+	    "students": {
+	      "type":"array",
+	      "items": {
+		"required": [
+		  "student"
+		],
+		"type":"object",
+		"properties": {
+		  "student": {
+		    "type":"array",
+		    "items": {
+		      "$ref":"#/definitions/studentType"
+		    },
+		    "minItems":1
+		  }
+		}
+	      },
+	      "minItems":1
+	    },
+	    "teachers": {
+	      "type":"array",
+	      "items": {
+		"required": [
+		  "teacher"
+		],
+		"type":"object",
+		"properties": {
+		  "teacher": {
+		    "type":"array",
+		    "items": {
+		      "facets": {
+		      },
+		      "base": {
+			"$ref":"#/definitions/person"
+		      }
+		    },
+		    "minItems":1
+		  }
+		}
+	      },
+	      "minItems":1
+	    }
+	  },
+	  "required": [
+	    "department",
+	    "students",
+	    "teachers"
+	  ]
+	}
+      },
+      "additionalProperties":false,
+      "required": [
+	"engineeringSchool"
+      ]
+    },
+    {
+      "type":"object",
+      "properties": {
+	"lecture": {
+	  "$ref":"#/definitions/lectureType"
+	}
+      },
+      "additionalProperties":false,
+      "required": [
+	"lecture"
+      ]
+    },
+    {
+      "type":"object",
+      "properties": {
+	"engineeringSchool": {
+	  "required": [
+	    "department",
+	    "students",
+	    "teachers"
+	  ],
+	  "type":"object",
+	  "properties": {
+	    "department": {
+	      "type":"array",
+	      "items": {
+		"$ref":"#/definitions/departmentType"
+	      },
+	      "minItems":1
+	    },
+	    "students": {
+	      "type":"array",
+	      "items": {
+		"required": [
+		  "student"
+		],
+		"type":"object",
+		"properties": {
+		  "student": {
+		    "type":"array",
+		    "items": {
+		      "$ref":"#/definitions/studentType"
+		    },
+		    "minItems":1
+		  }
+		}
+	      },
+	      "minItems":1
+	    },
+	    "teachers": {
+	      "type":"array",
+	      "items": {
+		"required": [
+		  "teacher"
+		],
+		"type":"object",
+		"properties": {
+		  "teacher": {
+		    "type":"array",
+		    "items": {
+		      "facets": {
+		      },
+		      "base": {
+			"$ref":"#/definitions/person"
+		      }
+		    },
+		    "minItems":1
+		  }
+		}
+	      },
+	      "minItems":1
+	    }
+	  }
+	}
+      },
+      "additionalProperties":false,
+      "required": [
+	"engineeringSchool"
+      ]
+    },
+    {
+      "type":"object",
+      "properties": {
+	"engineeringSchool": {
+	  "required": [
+	    "students",
+	    "teachers"
+	  ],
+	  "type":"object",
+	  "properties": {
+	    "students": {
+	      "type":"array",
+	      "items": {
+		"required": [
+		  "student"
+		],
+		"type":"object",
+		"properties": {
+		  "student": {
+		    "type":"array",
+		    "items": {
+		      "$ref":"#/definitions/studentType"
+		    },
+		    "minItems":1
+		  }
+		}
+	      },
+	      "minItems":1
+	    },
+	    "teachers": {
+	      "type":"array",
+	      "items": {
+		"required": [
+		  "teacher"
+		],
+		"type":"object",
+		"properties": {
+		  "teacher": {
+		    "type":"array",
+		    "items": {
+		      "facets": {
+		      },
+		      "base": {
+			"$ref":"#/definitions/person"
+		      }
+		    },
+		    "minItems":1
+		  }
+		}
+	      },
+	      "minItems":1
+	    }
+	  }
+	}
+      },
+      "additionalProperties":false,
+      "required": [
+	"engineeringSchool"
+      ]
+    },
+    {
+      "type":"object",
+      "properties": {
+	"engineeringSchool": {
+	  "required": [
+	    "teachers"
+	  ],
+	  "type":"object",
+	  "properties": {
+	    "teachers": {
+	      "type":"array",
+	      "items": {
+		"required": [
+		  "teacher"
+		],
+		"type":"object",
+		"properties": {
+		  "teacher": {
+		    "type":"array",
+		    "items": {
+		      "facets": {
+		      },
+		      "base": {
+			"$ref":"#/definitions/person"
+		      }
+		    },
+		    "minItems":1
+		  }
+		}
+	      },
+	      "minItems":1
+	    }
+	  }
+	}
+      },
+      "additionalProperties":false,
+      "required": [
+	"engineeringSchool"
+      ]
+    }
+  ],
+  "$schema":"http://json-schema.org/draft-04/schema#"
+}
