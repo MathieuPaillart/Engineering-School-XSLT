@@ -4,8 +4,6 @@
       "allOf": [
 	{
 	  "$ref":"#/definitions/person"
-	},
-	{
 	}
       ]
     },
@@ -136,8 +134,11 @@
       },
       "type":"object"
     },
-    "department": {
+    "departmentType": {
       "type":"object",
+	  "@label": {
+      "type":"string"
+		},
       "properties": {
 	"label": {
 	  "$ref":"#/definitions/@label"
@@ -154,11 +155,7 @@
 	"promotion"
       ]
     },
-    "@label": {
-      "type":"string"
-    }
-  },
-  "oneOf": [
+  "allOf": [
     {
       "type":"object",
       "properties": {
