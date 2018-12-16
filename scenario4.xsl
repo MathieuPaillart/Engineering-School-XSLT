@@ -3,6 +3,9 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
  <xsl:output method="xml"/>
  
+	<!-- 
+	Mise en place de la nouvelle structure, va itérer sur chacune des promotions de l'école
+	-->
 	<xsl:template match="/">
 		<chalets>
 			<xsl:for-each select="//engineeringSchool/department/promotion">
@@ -15,6 +18,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</chalets>
 	</xsl:template>
 	
+	<!-- 
+	Itération sur chaque référence d'étudiant, les références sont récupérées dans une variable
+	 puis passées en paramètre lors du passage à une autre template
+	-->
 	<xsl:template match="promotionStudents">
 		<xsl:variable name="studFromPromo">
 			<xsl:for-each select="studentref">  
@@ -27,6 +34,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		</xsl:apply-templates>
 	</xsl:template>
 	
+	<!-- 
+	Itération sur la liste de tous les étudiants, on a récupéré le paramètre contenant
+	les id des étudiants d'une promotion et pour chaque id on regarde si il est contenu
+	dans un élément étudiant parcouru, si c'est le cas on affiche son nom, prénom, numéro 
+	de téléphone et email
+	-->
 	<xsl:template match="students">
 		<xsl:param name="studRefs"/>
 		<xsl:for-each select="student[contains($studRefs, idStudent)]">   
