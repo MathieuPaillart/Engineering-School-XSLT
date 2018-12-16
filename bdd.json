@@ -1,0 +1,657 @@
+{
+  "engineeringSchool": {
+    "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "-label": "Polytech",
+    "-city": "Nice",
+    "-xsi:noNamespaceSchemaLocation": "bdd_schema.xsd",
+    "#text": [
+      "Voici l'école d'ingénieur Polytech Nice Sophia et ses merveilleux élèves :",
+      "Sa magnifique équipe enseignante :",
+      "Ainsi que des cours géniaux qui sont les suivants :"
+    ],
+    "students": {
+      "student": [
+        {
+          "name": "Paillart",
+          "firstName": "Mathieu",
+          "DoB": "14/07/1997",
+          "phoneNumber": "0608080808",
+          "email": "mathieu.paillart@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "11119999",
+          "moyenne": "14",
+          "habsences": "5"
+        },
+        {
+          "name": "Paillart",
+          "firstName": "Mathieu",
+          "DoB": "14/07/1997",
+          "phoneNumber": "0608080808",
+          "email": "mathieu.paillart@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "22222222",
+          "moyenne": "14",
+          "habsences": "10"
+        },
+        {
+          "name": "Lopez",
+          "firstName": "Laura",
+          "DoB": "07/11/1996",
+          "phoneNumber": "0672520748",
+          "email": "laura.lopez1@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "33333333",
+          "moyenne": "18",
+          "habsences": "8"
+        },
+        {
+          "name": "Croene",
+          "firstName": "Hugo",
+          "DoB": "07/11/1996",
+          "phoneNumber": "0672520748",
+          "email": "hugo.croene@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "12345678",
+          "moyenne": "9",
+          "habsences": "18"
+        },
+        {
+          "name": "Humbert",
+          "firstName": "Alix",
+          "DoB": "07/11/1996",
+          "phoneNumber": "0672520748",
+          "email": "alix.humbert@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "55555555",
+          "moyenne": "10",
+          "habsences": "2"
+        },
+        {
+          "name": "Ferré",
+          "firstName": "Jérémi",
+          "DoB": "07/11/1996",
+          "phoneNumber": "0672520748",
+          "email": "jeremi.ferre@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "21401234",
+          "moyenne": "14",
+          "habsences": "20"
+        },
+        {
+          "name": "Pillone",
+          "firstName": "Prune",
+          "DoB": "24/07/1997",
+          "phoneNumber": "0608080808",
+          "email": "prune.pillone@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "21080812",
+          "moyenne": "14",
+          "habsences": "7"
+        },
+        {
+          "name": "Gardin",
+          "firstName": "Alexis",
+          "DoB": "14/05/1995",
+          "phoneNumber": "0608080808",
+          "email": "alexis.gardin@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "21078808",
+          "moyenne": "14",
+          "habsences": "4"
+        },
+        {
+          "name": "Defranoux",
+          "firstName": "Alexis",
+          "DoB": "14/07/1997",
+          "phoneNumber": "0608080808",
+          "email": "alexis.defranoux@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "2108038",
+          "moyenne": "14",
+          "habsences": "4"
+        },
+        {
+          "name": "Bouis",
+          "firstName": "Maxime",
+          "DoB": "14/07/1997",
+          "phoneNumber": "0608080808",
+          "email": "maxime.bouis@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "21080808",
+          "moyenne": "14",
+          "habsences": "11"
+        },
+        {
+          "name": "Durant",
+          "firstName": "Clément",
+          "DoB": "14/07/1997",
+          "phoneNumber": "0608080808",
+          "email": "clement.durant@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "57322222",
+          "moyenne": "14",
+          "habsences": "22"
+        },
+        {
+          "name": "Masson",
+          "firstName": "Alexanne",
+          "DoB": "07/11/1996",
+          "phoneNumber": "0672520748",
+          "email": "alexanne.masson@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "89989999",
+          "moyenne": "14",
+          "habsences": "2"
+        },
+        {
+          "name": "Simon",
+          "firstName": "Serrano",
+          "DoB": "14/07/1997",
+          "phoneNumber": "0608080808",
+          "email": "simon.serrano@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "11111111",
+          "moyenne": "8",
+          "habsences": "35"
+        },
+        {
+          "name": "Leroux",
+          "firstName": "Camille",
+          "DoB": "14/07/1997",
+          "phoneNumber": "0608080808",
+          "email": "camille.leroux@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "99999999",
+          "moyenne": "14",
+          "habsences": "0"
+        },
+        {
+          "name": "Julien",
+          "firstName": "Camille",
+          "DoB": "07/11/1996",
+          "phoneNumber": "0672520748",
+          "email": "camille.julien@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "88888888",
+          "moyenne": "14",
+          "habsences": "7"
+        },
+        {
+          "name": "Ssegura",
+          "firstName": "Alexis",
+          "DoB": "14/07/1997",
+          "phoneNumber": "0608080808",
+          "email": "alexis.segura@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "77777777",
+          "moyenne": "14",
+          "habsences": "1"
+        },
+        {
+          "name": "Tosello",
+          "firstName": "Sebastien",
+          "DoB": "07/11/1996",
+          "phoneNumber": "0672520748",
+          "email": "sebastien.tosello@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "66666666",
+          "moyenne": "14",
+          "habsences": "34"
+        },
+        {
+          "name": "Dupont",
+          "firstName": "Paul",
+          "DoB": "14/07/1997",
+          "phoneNumber": "0608080808",
+          "email": "paul.dupont@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "98765432",
+          "moyenne": "14",
+          "habsences": "6"
+        },
+        {
+          "name": "Jurozek",
+          "firstName": "Florian",
+          "DoB": "14/07/1997",
+          "phoneNumber": "0608080808",
+          "email": "florian.jurozek@etu.unice.fr",
+          "country": "FRANCE",
+          "idStudent": "444444444",
+          "moyenne": "14",
+          "habsences": "2"
+        }
+      ]
+    },
+    "teachers": {
+      "teacher": [
+        {
+          "name": "Papazian",
+          "firstName": "Christophe",
+          "DoB": "14/08/75",
+          "phoneNumber": "0320320323",
+          "email": "Chistophe.Papazian@unice.fr",
+          "country": "France",
+          "idTeacher": "1"
+        },
+        {
+          "name": "Mosser",
+          "firstName": "Sebastien",
+          "DoB": "17/10/86",
+          "phoneNumber": "0320320323",
+          "email": "Sebastien.Mosser@unice.fr",
+          "country": "Canada",
+          "idTeacher": "2",
+          "returnDate": "2030-09-02"
+        },
+        {
+          "name": "Faron",
+          "firstName": "Catherine",
+          "DoB": "17/10/70",
+          "phoneNumber": "0320320323",
+          "email": "Catherine.Faron@unice.fr",
+          "country": "France",
+          "idTeacher": "3"
+        },
+        {
+          "name": "Deantoni",
+          "firstName": "Julien",
+          "DoB": "09/10/87",
+          "phoneNumber": "0320320323",
+          "email": "Julien.Deantoni@etu.unice.fr",
+          "country": "France",
+          "idTeacher": "4"
+        },
+        {
+          "name": "Collet",
+          "firstName": "Philippe",
+          "DoB": "17/10/95",
+          "phoneNumber": "0320320323",
+          "email": "Philippe.Collet@unice.fr",
+          "country": "France",
+          "idTeacher": "5"
+        }
+      ]
+    },
+    "lectures": {
+      "lecture": [
+        { "-name": "anglais" },
+        {
+          "-name": "info",
+          "maintenue": "true"
+        },
+        {
+          "-name": "maths",
+          "maintenue": "false"
+        },
+        {
+          "-name": "japonais",
+          "maintenue": "false"
+        },
+        { "-name": "philosophie" }
+      ]
+    },
+    "department": [
+      {
+        "-label": "SI",
+        "promotion": [
+          {
+            "-annee": "3",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": [
+                {
+                  "-ref-lecture": "anglais",
+                  "studentList": { "studentref": "55555555" },
+                  "teacherList": { "teacherref": "1" }
+                },
+                {
+                  "-ref-lecture": "japonais",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "2" }
+                },
+                {
+                  "-ref-lecture": "info",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "2" }
+                }
+              ]
+            }
+          },
+          {
+            "-annee": "4",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": [
+                {
+                  "-ref-lecture": "anglais",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "3" }
+                },
+                {
+                  "-ref-lecture": "info",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "4" }
+                }
+              ]
+            }
+          },
+          {
+            "-annee": "5",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": [
+                {
+                  "-ref-lecture": "anglais",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "5" }
+                },
+                {
+                  "-ref-lecture": "maths",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "2" }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "-label": "ELEC",
+        "promotion": [
+          {
+            "-annee": "3",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": [
+                {
+                  "-ref-lecture": "japonais",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "1" }
+                },
+                {
+                  "-ref-lecture": "anglais",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "2" }
+                }
+              ]
+            }
+          },
+          {
+            "-annee": "4",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": [
+                {
+                  "-ref-lecture": "anglais",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "2" }
+                },
+                {
+                  "-ref-lecture": "philosophie",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "3" }
+                }
+              ]
+            }
+          },
+          {
+            "-annee": "5",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": {
+                "-ref-lecture": "maths",
+                "studentList": {
+                  "studentref": [
+                    "11111111",
+                    "99999999"
+                  ]
+                },
+                "teacherList": { "teacherref": "4" }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "-label": "BAT",
+        "promotion": [
+          {
+            "-annee": "3",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": [
+                {
+                  "-ref-lecture": "japonais",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "2" }
+                },
+                {
+                  "-ref-lecture": "maths",
+                  "studentList": {
+                    "studentref": [
+                      "11111111",
+                      "99999999"
+                    ]
+                  },
+                  "teacherList": { "teacherref": "4" }
+                }
+              ]
+            }
+          },
+          {
+            "-annee": "4",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": {
+                "-ref-lecture": "philosophie",
+                "studentList": {
+                  "studentref": [
+                    "11111111",
+                    "99999999"
+                  ]
+                },
+                "teacherList": { "teacherref": "1" }
+              }
+            }
+          },
+          {
+            "-annee": "5",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": {
+                "-ref-lecture": "info",
+                "studentList": {
+                  "studentref": [
+                    "11111111",
+                    "99999999"
+                  ]
+                },
+                "teacherList": { "teacherref": "4" }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "-label": "MAM",
+        "promotion": [
+          {
+            "-annee": "3",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": {
+                "-ref-lecture": "anglais",
+                "studentList": {
+                  "studentref": [
+                    "11111111",
+                    "99999999"
+                  ]
+                },
+                "teacherList": { "teacherref": "5" }
+              }
+            }
+          },
+          {
+            "-annee": "4",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": {
+                "-ref-lecture": "maths",
+                "studentList": {
+                  "studentref": [
+                    "11111111",
+                    "99999999"
+                  ]
+                },
+                "teacherList": { "teacherref": "3" }
+              }
+            }
+          },
+          {
+            "-annee": "5",
+            "promotionStudents": {
+              "studentref": [
+                "55555555",
+                "99999999",
+                "11111111"
+              ]
+            },
+            "lectures": {
+              "lectureRef": {
+                "-ref-lecture": "anglais",
+                "studentList": {
+                  "studentref": [
+                    "11111111",
+                    "99999999"
+                  ]
+                },
+                "teacherList": { "teacherref": "4" }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
